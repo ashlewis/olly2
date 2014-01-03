@@ -1,0 +1,131 @@
+//
+// Layout
+// --------------------------------------------------
+
+//-----------------------------------------------------------------------------
+// MOBILE
+//-----------------------------------------------------------------------------
+body{
+    margin: 0 auto;
+    padding:2em;
+}
+
+h1{
+    height:140px;
+    padding:5px;
+}
+
+.profile-list, .profile-list li{
+    margin:0;
+    padding:0;
+}
+
+.profile-list li{
+    margin-bottom:.5em;
+    list-style-type: square;
+}
+
+.social-list{
+    padding:0;
+    margin:1em 0;
+    border-top:1px solid;
+}
+
+.social-list li{
+    margin:1em 0;
+    list-style: none;
+}
+
+.social-list li a{
+    padding:10px 0;
+}
+
+.organizations{
+    display:none;
+}
+
+//-----------------------------------------------------------------------------
+// SMALL
+//-----------------------------------------------------------------------------
+@media #{$small} {
+
+    .profile-pic{
+        float:right;
+        width:121px;
+        height:150px;
+        border-left:2em solid $white;
+    }
+
+    .organizations{
+        display:block;
+        margin:1.5em 0;
+        padding-top:1em;
+        border-top:1px solid;
+    }
+
+    .logo-list{
+        padding:0;
+    }
+
+    .logo-list li{
+        float:left;
+        width:20%;
+
+        list-style: none;
+        text-align: center;
+    }
+
+    .logo{
+        display:block;
+        margin:0 auto;
+    }
+}
+
+//-----------------------------------------------------------------------------
+// MEDIUM
+//-----------------------------------------------------------------------------
+@media #{$medium} {
+
+    h1{
+        height:290px;
+    }
+
+    .profile-pic{
+        width:242px;
+        height:300px;
+    }
+}
+
+//-----------------------------------------------------------------------------
+// LARGE
+//-----------------------------------------------------------------------------
+@media #{$large} {
+
+    body{
+        max-width:760px;
+    }
+
+    h1{
+       height:460px;
+    }
+
+    .profile-pic{
+        width:300px;
+        height:470px;
+    }
+}
+
+//-----------------------------------------------------------------------------
+// VERY LARGE
+//-----------------------------------------------------------------------------
+@media #{$vlarge} {
+
+    li.email{
+        float:left;
+    }
+
+    li.linkedin{
+        float:right;
+    }
+
+}

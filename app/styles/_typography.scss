@@ -1,0 +1,66 @@
+//-----------------------------------------------------------------------------
+// MOBILE
+//-----------------------------------------------------------------------------
+*{
+    font-family: $baseFontFamily;
+
+    font-size:$baseFontSize;
+    line-height:$baseLineHeight;
+
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+
+}
+
+h1, h2{
+    margin:0 0 0.5em 0;
+
+    font-family: $headingsFontFamily;
+}
+
+h1{
+
+    font-size:3em;
+    line-height:1em;
+}
+
+h2{
+    border-bottom:1px solid;
+
+    font-size:2em;
+}
+
+a{
+    &:focus{
+        outline: thin dotted;
+    }
+
+    &:active,
+    &:hover {
+        outline: 0;
+    }
+}
+
+//-----------------------------------------------------------------------------
+// MEDIUM
+//-----------------------------------------------------------------------------
+@media #{$medium} {
+
+    *{
+        font-size:18px;
+    }
+
+    .headline{
+        text-align: left;
+    }
+}
+
+//-----------------------------------------------------------------------------
+// LARGE
+//-----------------------------------------------------------------------------
+@media #{$large} {
+    *{
+        font-size:24px;
+    }
+}
